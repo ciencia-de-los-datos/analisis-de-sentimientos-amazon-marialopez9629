@@ -101,7 +101,6 @@ def pregunta_04():
     from sklearn.model_selection import GridSearchCV
     from sklearn.pipeline import Pipeline
     from sklearn.naive_bayes import BernoulliNB
-    import numpy as np
 
     # Cargue las variables.
     x_train, _, y_train, _ = pregunta_02()
