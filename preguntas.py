@@ -49,7 +49,7 @@ def pregunta_02():
     """
 
     # Importe train_test_split
-    from sklearn.model_select import train_test_split
+    from sklearn.model_selection import train_test_split
 
     # Cargue los datos generados en la pregunta 01.
     x_tagged, y_tagged, _, _ = pregunta_01()
