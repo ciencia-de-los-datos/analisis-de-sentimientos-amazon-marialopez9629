@@ -101,6 +101,7 @@ def pregunta_04():
     from sklearn.model_selection import GridSearchCV
     from sklearn.pipeline import Pipeline
     from sklearn.naive_bayes import BernoulliNB
+    import numpy as np
 
     # Cargue las variables.
     x_train, _, y_train, _ = pregunta_02()
@@ -115,7 +116,7 @@ def pregunta_04():
     # letras.
     countVectorizer = CountVectorizer(
         analyzer=analyzer,
-        lowercase=y_true,
+        lowercase=True,
         stop_words="english",
         token_pattern=r"(?u)\b[a-zA-Z][a-zA-Z]+\b",
         binary=True,
